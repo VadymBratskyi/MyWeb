@@ -1,0 +1,48 @@
+﻿@using WebApplication2.Models
+@model IEnumerable<Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<style>
+    TH, TD {
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+   }
+</style>
+<div>
+    <h3>Распродажа книг</h3>
+    <table>
+        <tr class="header">
+            <th>
+                <p>Название книги</p></th>
+            <th>
+                <p>Автор</p></th>
+            <th>
+                <p>Цена</p></th>
+            <th></th>
+        </tr>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>
+                    <p>@b.Name</p></td>
+                <td>
+                    <p>@b.Author</p></td>
+                <td>
+                    <p>@b.Price</p></td>
+                <td>
+                <p> <a class="btn btn-info" href="/Home/InfoModel/@b.Id">Info</a>
+                    <a class="btn btn-warning" href="/Home/EditModel/@b.Id">Edit</a>
+                    <a class="btn btn-danger" href="/Home/Delete/@b.Id">Delete</a></p>
+                </td>
+            </tr>
+        }
+    </table>
+    <br/>
+    <p>
+        <a class="btn btn-success" href="@Url.Action("Create","Home")">Add book</a>
+    </p>
+</div>

@@ -1,0 +1,38 @@
+﻿@using WebApplication3.Models
+@model Player
+@{
+    ViewBag.Title = "Edit";
+}
+<div>
+    <h2>Player @Model.Name</h2>
+    <hr/>
+    @using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Futbol player</legend>
+
+            <p>
+                Player's name <br />
+                @Html.EditorFor(model => model.Name)
+            </p>
+
+            <p>
+                Age <br />
+                @Html.EditorFor(model => model.Age)
+            </p>
+
+            <p>
+                Position  <br />
+                @Html.EditorFor(model => model.Position)
+            </p>
+            <p>
+                Team <br />
+                @Html.DropDownListFor(model => model.TeamId, ViewBag.Teams as SelectList)
+            </p>
+            <p class="btn btn-group">
+                <input class="btn btn-primary" type="submit" value="Save"/>
+                @Html.ActionLink("Back to list","Index","Home",null,new {@class="btn btn-default"})
+            </p>
+        </fieldset>
+    }
+</div>

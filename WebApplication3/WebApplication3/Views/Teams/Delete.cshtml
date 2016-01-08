@@ -1,0 +1,47 @@
+﻿@using WebApplication3.Models
+@model Team
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Info</h2>
+<div>
+    <h2>Team @Model.Name</h2>
+    <hr/>
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Players)
+        </dt>
+
+        @foreach (var d in Model.Players)
+        {
+            <dd>
+                *@d.Name
+            </dd>
+        }
+    </dl>
+</div>
+@using (Html.BeginForm())
+{
+    <div class="btn btn-group">
+        <button class="btn btn-warning" type="submit">Delete</button>
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })        
+    </div>
+}

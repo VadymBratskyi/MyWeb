@@ -1,0 +1,133 @@
+﻿@model WebApplication1.Models.Purchase
+
+@{
+    ViewBag.Title = "Buy";
+   
+}
+
+<div>
+    <h3>Форма оформления покупки</h3>
+    <form method="post" action="">
+        <input type="hidden" value="@ViewBag.BookId" name="BookId"/>
+        <table>
+            <tr>
+                <td>
+                    <p>Введите свое имя </p></td>
+                <td><input type="text" name="Person"/> </td>
+            </tr>
+            <tr>
+                <td><p>Введите адрес :</p></td>
+                <td>
+                    <input type="text" name="Address"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Password</p></td>
+                <td>
+                    <input id="UserPassword" name="UserPassword" type="password" value="val"/>
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Отправить"/> </td><td></td></tr>
+        </table>
+
+        <textarea cols="50" id="text" name="text" rows="5">
+            привет \n мир
+        </textarea>
+
+        <input id="color" name="color" type="radio" value="red" />
+        <span>красный</span> <br />
+        <input id="color" name="color" type="radio" value="blue" />
+        <span>синий</span> <br />
+        <input checked="checked" id="color" name="color" type="radio" value="green" />
+        <span>зеленый</span>
+
+        <input id="Enable" name="Enable" type="checkbox" value="true" />
+        <input name="Enable" type="hidden" value="false"/>
+
+        <label for="Name">Name</label>
+
+        <select id="countires" name="countires">
+            <option value="">Countries</option>
+            <option>Russia</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>France</option>
+        </select>
+
+
+        <select Length="9" id="countries" multiple="multiple" name="countires">
+            <option>Россия</option>
+            <option>США</option>
+            <option>Китай</option>
+            <option>Индия</option>
+        </select>
+    </form>
+</div>
+<br/>
+<br/>
+<div>
+    @using (Html.BeginForm("Buy", "Book", FormMethod.Post))
+    {
+        @Html.Hidden("BookId", @ViewBag.BookId as string)
+        <table>
+            <tr>
+                <td>
+                    <p>Введите свое имя </p></td>
+                <td>@Html.TextBox("Person", "Введите имя")</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Введите адрес :</p></td>
+                <td>@Html.TextBox("Address", "Введите адрес")</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Password</p></td>
+                <td>@Html.Password("UserPassword", "val")</td>
+            </tr>
+            <tr><td><input type="submit" value="Отправить"/> </td><td></td></tr>
+        </table>
+
+        @Html.TextArea("text", "привет \n мир", 5, 50, null)
+
+        @Html.RadioButton("color", "red")
+        <span>красный</span>
+        <br/>
+        @Html.RadioButton("color", "blue")
+        <span>синий</span>
+        <br/>
+        @Html.RadioButton("color", "green", true)
+        <span>зеленый</span>
+
+        @Html.CheckBox("Enable", false)
+
+        @Html.Label("Name")
+
+        @Html.DropDownList("countries2", new SelectList(new string[] {"Russia", "USA", "Canada", "France"}), "Countries")
+        @Html.DropDownList("Name", ViewBag.Books as SelectList)
+
+        @Html.ListBox("countries", new MultiSelectList(new string[] {"Россия", "США", "Китай", "Индия"}))
+        <input type="submit" value="Отправить"/>
+
+        <button name="action" value="add">Добавить</button>
+        <button name="action" value="delete">Удалить</button>
+    }
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+    @using (Html.BeginForm("Buy", "Book", FormMethod.Post))
+    {
+        @Html.HiddenFor(f=>f.BookId)
+        @Html.LabelFor(l=>l.Person, "Введите свое имя")
+        <br/>
+        @Html.TextBoxFor(l=>l.Person)
+        <br/><br />
+        @Html.LabelFor(m => m.Address, "Введите адрес")
+        <br/>
+        @Html.TextBoxFor(a=>a.Address)
+        <p><button type="submit" name="action" value="add">Send</button></p>
+    }
+</div>

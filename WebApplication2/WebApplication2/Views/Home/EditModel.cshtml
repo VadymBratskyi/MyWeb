@@ -1,0 +1,36 @@
+﻿@model WebApplication2.Models.Book
+
+
+@{
+    ViewBag.Title = "EditModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EditModel</h2>
+<h2>Book № @Model.Id</h2>
+@using (Html.BeginForm("EditModel", "Home", FormMethod.Post))
+{
+    <fieldset>
+        <p>
+            @Html.LabelFor(l => l.Name, "Название книги")
+            <br/>
+            @Html.EditorFor(e => e.Name)
+        </p>
+        <p>
+            @Html.LabelFor(l => l.Author, "Автор")
+            <br/>
+            @Html.EditorFor(e => e.Author)
+        </p>
+        <p>
+            @Html.LabelFor(l => l.Price, "Цена")
+            <br/>
+            @Html.EditorFor(e => e.Price)
+        </p>
+        <div class="form-actions no-color">
+            <input type="submit" value="Edit" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+        
+    </fieldset>
+}
+

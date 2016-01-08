@@ -1,0 +1,25 @@
+﻿@model WebApplication2.Models.Book
+
+@{
+    ViewBag.Title = "InfoModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>InfoModel</h2>
+<br />
+@Html.LabelFor(m => m.Name,"Название книги")
+<br/>
+@Html.TextBoxFor(m=>m.Name)
+<br/>
+@Html.LabelFor(m => m.Author,"Автор")
+<br/>
+@Html.TextBoxFor(m => m.Author, new {@style = "border: 2px solid blue"})
+<br />
+@Html.LabelFor(m=>m.Price,"Цена")
+<br/>
+@Html.TextBoxFor(m => m.Price, new {@style = "color:red"})
+<br/>
+<br/>
+<br/>
+<br/>
+@Html.ActionLink("Back to List", "Index")

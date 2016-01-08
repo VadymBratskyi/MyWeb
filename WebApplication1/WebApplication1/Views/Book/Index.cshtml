@@ -1,0 +1,94 @@
+﻿@using WebApplication1.Models
+@model IEnumerable<Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Footer{
+    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+}
+<div>
+    <h3>Распродажа книг</h3>
+    <table>
+        <tr>
+            <td>
+                <p>Название книги</p></td>
+            <td>
+                <p>Автор</p></td>
+            <td>
+                <p>Цена</p></td>
+            <td></td>
+        </tr>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>
+                    <p>@b.Name</p></td>
+                <td>
+                    <p>@b.Author</p></td>
+                <td>
+                    <p>@b.Price</p></td>
+                <td>
+                    <p><a href="/Book/Buy/@b.Id">Купить</a>
+                    </p></td>
+            </tr>
+        }
+    </table>
+</div>
+@HH()
+<div>
+    @{
+        var i = 125 + 350;
+        var rr = "Hello world " + i;
+    }
+    <p>@i</p>
+</div>
+
+<div>
+    @{ Html.RenderPartial("Partial"); }
+
+    @HElloWorld(Model)
+    <p>
+        @{
+            string[] cities = new string[] { "Лондон", "Париж", "Москва" };
+        }
+        @{
+            string[] countries = new string[] { "Великобритания", "Франция", "Россия" };
+        }
+        @CreateList(cities)
+        <br/>
+        @CreateList(countries)
+    </p>
+
+</div>
+
+@helper HElloWorld(IEnumerable<Book> book ){
+    <table>
+        @foreach (var w in book)
+        {
+            <tr>
+                <td>@w.Name</td>
+            </tr>
+        }
+    </table>
+}
+
+@helper HH()
+{
+    <h1>Hello World</h1>
+}
+
+@helper CreateList(string [] mm)
+{
+    <table>
+        @foreach (var m in mm)
+        {
+            <tr>
+                <td>
+                    @m
+                </td>
+            </tr>
+        }        
+    </table>
+}

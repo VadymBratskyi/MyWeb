@@ -1,0 +1,58 @@
+﻿@using WebApplication3.Models
+@model IEnumerable<Player>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+     table th{
+         padding: 15px;
+     }
+
+     td {
+         padding: 15px;
+     }
+</style>
+<h2>Players</h2>
+<p>
+    @Html.ActionLink("Add player", "Create","Home",null,new {@class = "btn btn-success"})
+</p>
+<table>
+    <tr>
+        <th>Player's name</th>
+        <th>Age</th>
+        <th>Position</th>
+        <th>Teams</th>
+        <th>Properties</th>
+    </tr>
+    @foreach (var ss in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => ss.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(m => ss.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(m => ss.Position)
+            </td>
+            <td>
+                @Html.DisplayFor(m => ss.Team.Name)
+            </td>
+            <td>
+                <div class="btn-group">
+                    <a class="btn btn-info" href="/Home/Info/@ss.Id">Info</a>
+                    <a class="btn btn-warning" href="/Home/Edit/@ss.Id">Edit</a>
+                    <a class="btn btn-danger" href="/Home/Delete/@ss.Id">Delete</a>
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+<br/>
+<p>
+   @Html.ActionLink("Teams list","Index","Teams",null,new {@class = "btn btn-default"})
+</p>
+
+

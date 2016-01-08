@@ -1,0 +1,29 @@
+﻿@using WebApplication3.Models
+@model Team
+@{
+    ViewBag.Title = "Create";
+}
+<div>
+    <h2>Add team</h2>
+    <hr />
+    @using (Html.BeginForm("Create", "Teams", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Futbol team</legend>
+
+            <p>
+                Team's name <br />
+                @Html.EditorFor(model => model.Name)
+            </p>
+            <p>
+                Coach <br />
+                @Html.EditorFor(model => model.Coach)
+            </p>
+            <p class="btn btn-group">
+                <input class="btn btn-primary" type="submit" value="Save" />
+                @Html.ActionLink("Back to list", "Index", "Teams", null, new { @class = "btn btn-default" })
+            </p>
+        </fieldset>
+    }
+</div>
+

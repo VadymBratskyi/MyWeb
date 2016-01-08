@@ -1,0 +1,56 @@
+﻿@using WebApplication3.Models
+@model IEnumerable<Team>
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+   th,td {
+        padding: 20px;
+    } 
+</style>
+<h2>Teams</h2>
+<p>
+    @Html.ActionLink("Add team","Create","Teams",null,new {@class="btn btn-success"})
+</p>
+<br/>
+<table>
+    <tr>
+        <th>Team's name</th>
+        <th>Coach</th>
+        <th>Players</th>
+        <th>Properties</th>
+    </tr>
+    @foreach (var ff in Model)
+    {
+        <tr>
+            <td>
+                @ff.Name
+            </td>
+            <td>
+                @ff.Coach
+            </td>
+            <td>
+                <ul>
+                    @foreach (var ll in ff.Players)
+                    {
+                        <li>
+                           <a href="/Home/Info/@ll.Id">@ll.Name (@ll.Position)</a>
+                        </li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <div class="btn btn-group">
+                    <a class="btn btn-info" href="/Teams/Info/@ff.Id">Info</a>
+                    <a class="btn btn-warning" href="/Teams/Edit/@ff.Id">Edit</a>
+                    <a class="btn btn-danger"href="/Teams/Delete/@ff.Id">Delete</a>
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+<br/>
+<p>
+    @Html.ActionLink("Main page","Index","Home",null,new {@class = "btn btn-default"})
+</p>
+
