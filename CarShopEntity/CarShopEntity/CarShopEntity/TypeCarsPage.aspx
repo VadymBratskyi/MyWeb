@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css">
     <link href="Content/cropper.css" rel="stylesheet" />
 
-    <%-- Helloooo World --%>
-
     <script src="Scripts/kendo/jszip.min.js" type="text/javascript"></script>
     <script src="Scripts/kendo/kendo.all.min.js" type="text/javascript"></script>
     <script src="Scripts/zoomsl-3.0.js"></script>
