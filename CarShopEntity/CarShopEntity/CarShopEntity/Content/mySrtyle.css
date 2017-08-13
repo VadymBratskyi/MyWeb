@@ -1,0 +1,23 @@
+﻿.dv {
+    padding: 15px 35px;
+}
+.txtStyleMain {
+    font-size: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: Times New Roman;
+}
+
+.tabInfo th, .tabInfo td {
+    padding:5px 10px 5px 10px;
+}
+
+.nopadding {
+    padding: 0!important;
+}
+
+.docs-flip-horizontal {
+    -ms-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}

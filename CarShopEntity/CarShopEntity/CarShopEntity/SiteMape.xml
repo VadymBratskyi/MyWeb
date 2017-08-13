@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+
+  <siteMapNode url="Home" title="Домашняя"  description="Главная странциа сайта"/>
+
+  <siteMapNode url="" title="Автомобили"  description="Список всех автомбилей">
+    <siteSubNode url="Cars" title="Все автомобили"  description="Список всех моделей авто" />
+    <siteSubNode url="Models" title="Модели авто"  description="Список всех моделей авто" />
+    <siteSubNode url="Types" title="Типы авто"  description="Список всех типов авто" />
+  </siteMapNode>
+
+  <siteMapNode url="Clients" title="Клиенты"  description="Список всех клиентов"/>
+
+  <siteMapNode url="Orders" title="Заказы"  description="Список всех заказов"/>
+
+</siteMap>

@@ -1,0 +1,260 @@
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe.config
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.rsp
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csi.exe
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csi.rsp
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.AppContext.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Collections.Immutable.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe.config
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.rsp
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe.config
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll.config
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.pdb
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.xml
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.carr.resources
+c:\users\vbratskyi\documents\visual studio 2017\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.rsp
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csi.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csi.rsp
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.AppContext.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Collections.Immutable.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Reflection.Metadata.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.rsp
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.pdb
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.carr.resources
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csc.rsp
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csi.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\csi.rsp
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.AppContext.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Collections.Immutable.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\System.Reflection.Metadata.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\vbc.rsp
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\CarShopEntity.pdb
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.carr.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe.config
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.rsp
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csi.exe
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csi.rsp
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.AppContext.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Collections.Immutable.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Reflection.Metadata.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe.config
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.rsp
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe.config
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll.config
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.pdb
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.xml
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.carr.resources
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
+D:\VadimB\Projects\1\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.rsp
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csi.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csi.rsp
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.AppContext.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Collections.Immutable.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Reflection.Metadata.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.rsp
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll.config
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.pdb
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.exe.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csc.rsp
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csi.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\csi.rsp
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.AppContext.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Collections.Immutable.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\System.Reflection.Metadata.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.exe.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\vbc.rsp
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\roslyn\VBCSCompiler.exe.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll.config
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\CarShopEntity.pdb
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.car.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar1.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar2.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar3.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar4.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar5.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar6.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar7.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar8.resources
+D:\VadimB\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.newcar9.resources
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.car_1.resources
+D:\job\Projects\C#_ASP\Projects\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
