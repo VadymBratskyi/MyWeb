@@ -97,26 +97,26 @@
                         <div class="col-sm-5">
                             <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button type="button" class="btn btn-sm btn-danger btn-number" value="5" data-type="minus" data-field="speed">
-                                        <span>-5</span>
-                                    </button>
                                     <button type="button" class="btn btn-sm btn-danger btn-number" value="3" data-type="minus" data-field="speed">
                                         <span>-3</span>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-danger btn-number" value="1" data-type="minus" data-field="speed">
                                         <span>-1</span>
                                     </button>
+                                    <button type="button" class="btn btn-sm btn-danger btn-number" value="0.5" data-type="minus" data-field="speed">
+                                        <span>-0.5</span>
+                                    </button>
                                 </span>
-                                <input type="text" name="speed" class="form-control input-sm txt-number" style="min-width: 50px;" value="1" min="1" max="10">
+                                <input type="text" name="speed" class="form-control input-sm txt-number" style="min-width: 40px;" value="1" min="0.5" max="10">
                                 <span class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-success btn-number" value="0.5" data-type="plus" data-field="speed">
+                                        <span>+0.5</span>
+                                    </button>
                                     <button type="button" class="btn btn-sm btn-success btn-number" value="1" data-type="plus" data-field="speed">
                                         <span>+1</span>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-success btn-number" value="3" data-type="plus" data-field="speed">
                                         <span>+3</span>
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-success btn-number" value="5" data-type="plus" data-field="speed">
-                                        <span>+5</span>
                                     </button>
                                 </span>
                             </div>     

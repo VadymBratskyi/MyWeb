@@ -177,7 +177,7 @@ function btnChangeSpeed() {
         var fieldName = $(this).attr("data-field");
         var type = $(this).attr("data-type");
         var tbInput = $("input[name='" + fieldName + "']");
-        var btVal = parseInt(bt.val());
+        var btVal = parseFloat(bt.val());
         var currenValue = parseFloat(tbInput.val());
 
         if (!isNaN(currenValue)) {
@@ -192,13 +192,13 @@ function btnChangeSpeed() {
     });
 
     $(".txt-number").change(function () {
-        var minVal = parseInt($(this).attr("min"));
+        var minVal = parseFloat($(this).attr("min"));
         var maxVal = parseInt($(this).attr("max"));
-        var currentValue = parseInt($(this).val());
+        var currentValue = parseFloat($(this).val());
         var name = $(this).attr("name");
 
         if (name == "speed") {
-            speed = parseInt($(this).val()) * 1000;
+            speed = parseFloat($(this).val()) * 1000;
         }
 
         if (currentValue != "") {
@@ -286,7 +286,7 @@ function btnChangePositionInGrid() {
 function btnSkipInGrid() {
     $("#btSkip").click(function () {
         var tbInput = $("input[name='skip']");
-        var currenValue = parseFloat(tbInput.val());
+        var currenValue = parseInt(tbInput.val());
 
         if (!isNaN(currenValue)) {
             if (currenValue <= count) {
@@ -336,14 +336,14 @@ function plusMinus(bt, fieldName, type, time, currenValue, tbInput) {
         if (currenValue > tbInput.attr("min")) {
             tbInput.val(currenValue - time).change();
         }
-        if (parseInt(tbInput.val()) == tbInput.attr("min")) {
+        if (parseFloat(tbInput.val()) == tbInput.attr("min")) {
             bt.attr("disabled", true);
         }
     } else if (type == "plus") {
         if (currenValue < tbInput.attr("max")) {
             tbInput.val(currenValue + time).change();
         }
-        if (parseInt(tbInput.val()) == tbInput.attr("max")) {
+        if (parseFloat(tbInput.val()) == tbInput.attr("max")) {
             bt.attr("disabled", true);
         }
     }
@@ -351,26 +351,26 @@ function plusMinus(bt, fieldName, type, time, currenValue, tbInput) {
 
 function disabledButton(val) {
 
-    var value = parseInt(val);
+    var value = parseFloat(val);
 
-    if ((value - 5) < 1) {
-        $(".btn-number[value='5'][data-type='minus']").attr("disabled", true);
-    }
-    if ((value - 3) < 1) {
+    if ((value - 3) < 0.5) {
         $(".btn-number[value='3'][data-type='minus']").attr("disabled", true);
     }
-    if ((value - 1) < 1) {
+    if ((value - 1) < 0.5) {
         $(".btn-number[value='1'][data-type='minus']").attr("disabled", true);
     }
-
-    if ((value + 5) > 10) {
-        $(".btn-number[value='5'][data-type='plus']").attr("disabled", true);
+    if ((value - 0.5) < 0.5) {
+        $(".btn-number[value='0.5'][data-type='minus']").attr("disabled", true);
     }
+
     if ((value + 3) > 10) {
         $(".btn-number[value='3'][data-type='plus']").attr("disabled", true);
     }
     if ((value + 1) > 10) {
         $(".btn-number[value='1'][data-type='plus']").attr("disabled", true);
+    }
+    if ((value + 0.5) > 10) {
+        $(".btn-number[value='0.5'][data-type='plus']").attr("disabled", true);
     }
 
 }
