@@ -323,9 +323,9 @@ function getFromSelectRow() {
 }
 
 function scrollingContent() {
-    var heightRow = mainGrid.select()[0].offsetTop;
-    var height = rowIndex * (heightRow / count);
-    $("#grid div.k-grid-content").scrollTop(height);
+    var rowTop = mainGrid.select()[0].offsetTop;
+    var heightRow = mainGrid.content[0].scrollHeight / count;
+    $("#grid div.k-grid-content").scrollTop(rowTop-heightRow);
 }
 
 
