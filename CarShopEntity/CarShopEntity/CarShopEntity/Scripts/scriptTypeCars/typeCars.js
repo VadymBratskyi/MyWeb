@@ -5,6 +5,7 @@ var timeIndex = 0;
 var angle = 90;
 var deg = 0;
 var speed = 1000;
+var typeindex = 0;
 var timer1 = null;
 var timer2 = null;
 var mainGrid;
@@ -104,7 +105,7 @@ function croppImg() {
 
 
 function btnSlider() {
-    var typeindex=0;
+    
 
     $(".btn-slider").click(function () {
 
@@ -155,13 +156,14 @@ function btnSlider() {
         if (btType == "set") {
            
             var listBox = $("#lbType").data("kendoListBox");
-            listBox.select(listBox.items()[typeindex]);
-            var dataList = listBox.dataSource.view()[typeindex];
-            var obj = rowObject;
-            //$("#imgSrc").attr("src", rowObject.ImgPath);
-
+            
             if (typeindex < listBox.dataSource.data().length) {
+
+                listBox.select(listBox.items()[typeindex]);
+                var dataList = listBox.dataSource.view()[typeindex];
+                rowObject.Type = dataList;
                 typeindex += 1;
+                $('#grid').data('kendoGrid').refresh();
             }
         }
 
@@ -412,7 +414,9 @@ function buildListBoxCar() {
             var index = this.select().index(),
                 dataItem = this.dataSource.view()[index];
             carId = dataItem.id;
-            
+
+            typeindex = 0;
+
             typeDataSource = GetDataSourceToType(carId);
             var listBox = $("#lbType").data("kendoListBox");
             listBox.setDataSource(typeDataSource);

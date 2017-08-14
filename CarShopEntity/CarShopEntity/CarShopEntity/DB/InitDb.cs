@@ -34,11 +34,11 @@ namespace CarShopEntity.DB
             typ4.Cars.Add(car4);
             context.TypesCars.AddRange(new List<TypeCar>() { typ1, typ2, typ3, typ4 });
 
-            var model1 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "x5", Color = "#FF0000", Engine = 4.8, Fuel = "benz", Price = 150.550m, ImgPath = "ImageSource/x5.jpg", IssueDate = new DateTime(), Car = car1, TypeCar = typ2};
-            var model2 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "5", Color = "#0000FF", Engine = 3.0, Fuel = "benz", Price = 200.000m, ImgPath = "ImageSource/5.jpg", IssueDate = new DateTime(), Car = car1, TypeCar = typ1};
-            var model3 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "m5", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/m5.jpg", IssueDate = new DateTime(), Car = car1, TypeCar = typ4};
-            var model4 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "sls", Color = "#008000", Engine = 5.0, Fuel = "duz", Price = 700.000m, ImgPath = "ImageSource/sls.jpg", IssueDate = new DateTime(), Car = car4, TypeCar = typ4};
-            var model5 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "530", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/530.jpg", IssueDate = new DateTime(), Car = car1, TypeCar = typ1};
+            var model1 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "x5", Color = "#FF0000", Engine = 4.8, Fuel = "benz", Price = 150.550m, ImgPath = "ImageSource/x5.jpg", IssueDate = new DateTime(), Car = car1};
+            var model2 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "5", Color = "#0000FF", Engine = 3.0, Fuel = "benz", Price = 200.000m, ImgPath = "ImageSource/5.jpg", IssueDate = new DateTime(), Car = car1};
+            var model3 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "m5", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/m5.jpg", IssueDate = new DateTime(), Car = car1};
+            var model4 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "sls", Color = "#008000", Engine = 5.0, Fuel = "duz", Price = 700.000m, ImgPath = "ImageSource/sls.jpg", IssueDate = new DateTime(), Car = car4};
+            var model5 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "530", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/530.jpg", IssueDate = new DateTime(), Car = car1};
             var model6 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "320", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/320.jpg", IssueDate = new DateTime(), Car = car1 };
             var model7 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "m3", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/m3.jpg", IssueDate = new DateTime(), Car = car1 };
             var model8 = new ModelCar() { Id = Guid.NewGuid(), ModelName = "m4", Color = "#000000", Engine = 2.5, Fuel = "benz", Price = 400.500m, ImgPath = "ImageSource/m4.jpg", IssueDate = new DateTime(), Car = car1 };
