@@ -46,7 +46,7 @@ namespace CarShopEntity
             {
                 CarName = car.Car.CarName;
                 CarModel = car.ModelName;
-                lbType.Text = car.TypeCar.TypeName;
+                lbType.Text = car.TypeCar!=null ? car.TypeCar.TypeName :string.Empty;
                 lbEng.Text = car.Engine.ToString();
                 lbPrice.Text = car.Price.ToString();
                 lbFuel.Text = car.Fuel;

@@ -164,6 +164,7 @@ function btnSlider() {
                 rowObject.Type = dataList;
                 typeindex += 1;
                 $('#grid').data('kendoGrid').refresh();
+                mainGrid.select("tr:eq(" + rowIndex + ")");
             }
         }
 

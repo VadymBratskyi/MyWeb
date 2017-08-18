@@ -295,8 +295,8 @@ D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramewor
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
-D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.car_1.resources
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
 D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
