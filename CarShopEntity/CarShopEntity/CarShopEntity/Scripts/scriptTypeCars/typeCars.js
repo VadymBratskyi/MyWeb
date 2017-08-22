@@ -12,7 +12,6 @@ var mainGrid;
 var carId;
 var typeDataSource;
 var mainDataSource;
-var changesRowIndex = new Array();
 
 $(document).ready(function () {
     buildListBoxCar();
@@ -31,19 +30,8 @@ function DeleteSaveData() {
 
     $("#btCancelAll").click(function() {
 
-        if (changesRowIndex.length > 0) {
-      
-            var dataGrid = mainGrid.dataSource.view();
-
-            for (var i = 0; i < changesRowIndex.length; i++) {
-                for (var j = 0; j < dataGrid.length; j++) {
-                    if (changesRowIndex[i].uid == dataGrid[j].uid) {
-                        dataGrid[j].Type = null;
-                    }
-                }
-            }
-            $('#grid').data('kendoGrid').refresh();
-        }
+        $('#grid').data('kendoGrid').dataSource.read();
+        $('#grid').data('kendoGrid').refresh();
 
         typeindex = 0;
         $("#btSetType").removeAttr("disabled");
@@ -155,7 +143,6 @@ function btnSlider() {
                 typeindex += 1;
                 $('#grid').data('kendoGrid').refresh();
                 mainGrid.select("tr:eq(" + rowIndex + ")");
-                changesRowIndex.push(rowObject);
             }
             if (typeindex == listBox.dataSource.data().length) {
                 $(this).attr("disabled", true);
