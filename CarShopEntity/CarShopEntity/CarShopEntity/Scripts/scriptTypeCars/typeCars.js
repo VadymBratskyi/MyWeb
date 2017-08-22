@@ -33,10 +33,14 @@ function DeleteSaveData() {
 
         if (changesRowIndex.length > 0) {
       
-            for (var i = 0; i < changesRowIndex.length; i++) {
+            var dataGrid = mainGrid.dataSource.view();
 
-                var dataItem = mainGrid.dataSource.view()[changesRowIndex[i]];
-                dataItem.Type = null;
+            for (var i = 0; i < changesRowIndex.length; i++) {
+                for (var j = 0; j < dataGrid.length; j++) {
+                    if (changesRowIndex[i].uid == dataGrid[j].uid) {
+                        dataGrid[j].Type = null;
+                    }
+                }
             }
             $('#grid').data('kendoGrid').refresh();
         }
@@ -151,7 +155,7 @@ function btnSlider() {
                 typeindex += 1;
                 $('#grid').data('kendoGrid').refresh();
                 mainGrid.select("tr:eq(" + rowIndex + ")");
-                changesRowIndex.push(rowIndex);
+                changesRowIndex.push(rowObject);
             }
             if (typeindex == listBox.dataSource.data().length) {
                 $(this).attr("disabled", true);
