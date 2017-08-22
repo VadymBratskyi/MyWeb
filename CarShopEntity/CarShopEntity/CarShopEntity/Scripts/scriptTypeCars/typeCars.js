@@ -12,6 +12,7 @@ var mainGrid;
 var carId;
 var typeDataSource;
 var mainDataSource;
+var changesRowIndex = new Array();
 
 $(document).ready(function () {
     buildListBoxCar();
@@ -22,16 +23,39 @@ $(document).ready(function () {
     btnSkipInGrid();
     btnSlider();
     croppImg();
+    DeleteSaveData();
 });
 
-var uploadedImageType = 'image/jpeg';
-var uploadedImageURL;
+
+function DeleteSaveData() {
+
+    $("#btCancelAll").click(function() {
+
+        if (changesRowIndex.length > 0) {
+      
+            for (var i = 0; i < changesRowIndex.length; i++) {
+
+                var dataItem = mainGrid.dataSource.view()[changesRowIndex[i]];
+                dataItem.Type = null;
+            }
+            $('#grid').data('kendoGrid').refresh();
+        }
+
+        typeindex = 0;
+        $("#btSetType").removeAttr("disabled");
+        var listBox = $("#lbType").data("kendoListBox");
+        listBox.select(listBox.items()[0]);
+
+    });
+
+    $("#btSaveAll").click(function() {
+        alert("save");
+    });
+}
+
 
 function croppImg() {
-
     var $image = $("#imgSrc");
-
-
     $image.cropper("destroy");
     $image.cropper({ "autoCrop": false });
 
@@ -63,41 +87,6 @@ function croppImg() {
             }
         }
     });
-
-    // Import image
-    var $inputImage = $('#inputImage');
-
-    if (URL) {
-        $inputImage.change(function () {
-            var files = this.files;
-            var file;
-
-            if (!$image.data('cropper')) {
-                return;
-            }
-
-            if (files && files.length) {
-                file = files[0];
-
-                if (/^image\/\w+$/.test(file.type)) {
-                    uploadedImageType = file.type;
-
-                    if (uploadedImageURL) {
-                        URL.revokeObjectURL(uploadedImageURL);
-                    }
-
-                    uploadedImageURL = URL.createObjectURL(file);
-                    $image.cropper('destroy').attr('src', uploadedImageURL);
-                    $("button[data-option='crop']").removeClass("active");
-                    $inputImage.val('');
-                } else {
-                    window.alert('Please choose an image file.');
-                }
-            }
-        });
-    } else {
-        $inputImage.prop('disabled', true).parent().addClass('disabled');
-    }
 }
 
 
@@ -154,7 +143,7 @@ function btnSlider() {
            
             var listBox = $("#lbType").data("kendoListBox");
             
-            if (typeindex < listBox.dataSource.data().length) {
+            if (typeindex < listBox.dataSource.data().length && rowObject!=null) {
 
                 listBox.select(listBox.items()[typeindex]);
                 var dataList = listBox.dataSource.view()[typeindex];
@@ -162,8 +151,21 @@ function btnSlider() {
                 typeindex += 1;
                 $('#grid').data('kendoGrid').refresh();
                 mainGrid.select("tr:eq(" + rowIndex + ")");
+                changesRowIndex.push(rowIndex);
+            }
+            if (typeindex == listBox.dataSource.data().length) {
+                $(this).attr("disabled", true);
             }
         }
+
+        if (btType == "delete") {
+            var grid = $("#grid").data("kendoGrid");
+            $("#grid").find(".k-state-selected").each(function() {
+                grid.removeRow($(this).closest('tr'));
+            });
+            $('#grid').data('kendoGrid').refresh();
+        }
+            
 
     });
 }
@@ -418,6 +420,7 @@ function buildListBoxCar() {
             carId = dataItem.id;
 
             typeindex = 0;
+            $("#btSetType").removeAttr("disabled");
 
             typeDataSource = GetDataSourceToType(carId);
             var listBox = $("#lbType").data("kendoListBox");

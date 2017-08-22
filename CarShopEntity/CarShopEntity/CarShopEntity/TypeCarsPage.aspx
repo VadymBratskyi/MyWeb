@@ -55,10 +55,10 @@
                         </td>
                         <td>
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-default" id="btDelete">
+                                <button type="button" class="btn btn-sm btn-default" id="btCancelAll" title="Отменить все изменения">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </button>
-                                <button type="button" class="btn btn-sm btn-default">
+                                <button type="button" class="btn btn-sm btn-default" id="btSaveAll" title="Сохранить все изменения">
                                     <span class="glyphicon glyphicon-floppy-disk"></span>
                                 </button>
                             </div>
@@ -74,6 +74,9 @@
                             </div>
                             <button type="button" id="btSetType" class="btn  btn-sm btn-default btn-slider" data-type="set">
                                 <span>Set</span>
+                            </button>
+                            <button type="button" id="btDeleteScan" class="btn  btn-sm btn-default btn-slider" data-type="delete">
+                                <span>DeleteScan</span>
                             </button>
                         </td>
                         <td>
