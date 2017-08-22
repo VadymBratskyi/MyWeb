@@ -46,7 +46,6 @@ function croppImg() {
             case "crope":
                 $image.cropper("setDragMode", data.option);
                 $("button[data-option='crop']").addClass("active");
-                $image.removeAttr("data-large");
                 break;
             case "setDragMode":
                 $image.cropper(data.method, data.option);
@@ -59,8 +58,6 @@ function croppImg() {
                 $image.cropper("reset");
                 $image.cropper("clear");
                 $("button[data-option='crop']").removeClass("active");
-            case "clear":
-                $image.cropper("clear");
             default:
                 break;
             }
@@ -306,7 +303,7 @@ function btnSkipInGrid() {
 function zoom() {
     $('#imgSrc').imagezoomsl({
         zoomrange: [1, 12],
-        zoomstart: 4,
+        zoomstart: 2,
         innerzoom: true,
         magnifierborder: "none"
     });
@@ -317,11 +314,15 @@ function getFromSelectRow() {
     rowIndex = mainGrid.select().index();
 
     $("#imgSrc").attr("src", rowObject.ImgPath);
-    $("#imgSrc").attr("data-large", rowObject.ImgPath);
     $("#imgSrc").cropper("destroy");
     $("button[data-option='crop']").removeClass("active");
     $(".btn-position").removeAttr("disabled");
     $(".img-container").show();
+
+    var d1 = $(".magnifier").remove();
+    var d2 = $(".statusdiv").remove();
+    var d3 = $(".tracker").remove();
+
     zoom();
 }
 

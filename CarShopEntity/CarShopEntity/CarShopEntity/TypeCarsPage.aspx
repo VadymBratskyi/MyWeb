@@ -19,9 +19,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="padding: 20px">
             <div class="col-md-12">
-                <table class="table-condensed">
+                <table class="table-condensed" style="width: 100%;">
                     <tr>
                         <td>
                             <asp:DropDownList runat="server" CssClass="form-control" ID="ddPrinters"></asp:DropDownList>
@@ -123,6 +123,46 @@
                                 </span>
                             </div>
                         </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="crope" data-option="crop" title="Crop">
+                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Crop">
+                                        <span class="fa fa-crop"></span>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="setDragMode" data-option="move" title="Move">
+                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Move">
+                                        <span class="fa fa-arrows"></span>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="rotate" data-option="-90" title="Rotate Left">
+                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Rotate Left">
+                                        <span class="fa fa-rotate-left"></span>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="rotate" data-option="90" title="Rotate Right">
+                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Rotate Right">
+                                        <span class="fa fa-rotate-right"></span>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="reset" title="Reset">
+                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Reset">
+                                        <span class="fa fa-refresh"></span>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger btn-crop" data-method="dest" title="Cancel">
+                                    <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Cancel">
+                                        <span class="fa fa-ban"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -158,52 +198,7 @@
             </div>
             <div class="col-md-6">
                 <div class="img-container"  style="width: 75%; height: 60%; display: none">
-                    
                   <img id="imgSrc" style="width: 100%; height: 100%" class="img-responsive img-container img-thumbnail">
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="crope" data-option="crop" title="Crop">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Crop">
-                                <span class="fa fa-crop"></span>
-                            </span>
-                        </button>
-                        <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="clear" title="Clear">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Clear">
-                                <span class="fa  fa-paint-brush"></span>
-                            </span>
-                        </button>
-                        <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="setDragMode" data-option="move" title="Move">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Move">
-                                <span class="fa fa-arrows"></span>
-                            </span>
-                        </button>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="rotate" data-option="-90" title="Rotate Left">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Rotate Left">
-                                <span class="fa fa-rotate-left"></span>
-                            </span>
-                        </button>
-                        <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="rotate" data-option="90" title="Rotate Right">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Rotate Right">
-                                <span class="fa fa-rotate-right"></span>
-                            </span>
-                        </button>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary btn-crop" data-method="reset" title="Reset">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Reset">
-                                <span class="fa fa-refresh"></span>
-                            </span>
-                        </button>
-                        <button type="button" class="btn btn-sm btn-danger btn-crop" data-method="dest" title="Cancel">
-                            <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Cancel">
-                                <span class="fa fa-ban"></span>
-                            </span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>

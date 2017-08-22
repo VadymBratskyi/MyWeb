@@ -3,7 +3,7 @@ namespace CarShopEntity.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class car_1 : DbMigration
+    public partial class car1 : DbMigration
     {
         public override void Up()
         {
