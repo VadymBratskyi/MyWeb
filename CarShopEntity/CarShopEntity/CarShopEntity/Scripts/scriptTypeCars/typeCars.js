@@ -12,6 +12,7 @@ var mainGrid;
 var carId;
 var typeDataSource;
 var mainDataSource;
+var removeObject = new Array();
 
 $(document).ready(function () {
     buildListBoxCar();
@@ -22,11 +23,11 @@ $(document).ready(function () {
     btnSkipInGrid();
     btnSlider();
     croppImg();
-    DeleteSaveData();
+    CancelSaveData();
 });
 
 
-function DeleteSaveData() {
+function CancelSaveData() {
 
     $("#btCancelAll").click(function() {
 
@@ -34,6 +35,7 @@ function DeleteSaveData() {
         $('#grid').data('kendoGrid').refresh();
 
         typeindex = 0;
+        removeObject = [];
         $("#btSetType").removeAttr("disabled");
         var listBox = $("#lbType").data("kendoListBox");
         listBox.select(listBox.items()[0]);
@@ -41,7 +43,22 @@ function DeleteSaveData() {
     });
 
     $("#btSaveAll").click(function() {
-        alert("save");
+        var items = mainDataSource.data();
+
+        $.ajax({
+            type: "POST",
+            url: "TypeCarsPage.aspx/SaveDate",
+            data: "{'items':" + JSON.stringify(items) + ",'removeItems':" + JSON.stringify(removeObject) + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function () {
+                $('#grid').data('kendoGrid').dataSource.read();
+                $('#grid').data('kendoGrid').refresh();
+            },
+            error: function (msg) {
+                alert(msg.d);
+            }
+        });
     });
 }
 
@@ -125,8 +142,8 @@ function btnSlider() {
                 clearTimeout(timer2);
                 clearTimeout(timer1);
                 $("#iconBtPlaPause").removeClass("glyphicon-pause").addClass("glyphicon-play");
+                $("#btPlay").attr("data-type", "play");
                 mainGrid.select("tr:eq(0)");
-                alert('Слайд шоу остановлен');
                 $(this).attr("disabled", true);
             }
         }
@@ -134,24 +151,32 @@ function btnSlider() {
         if (btType == "set") {
            
             var listBox = $("#lbType").data("kendoListBox");
-            
-            if (typeindex < listBox.dataSource.data().length && rowObject!=null) {
+
+            if (typeindex < listBox.dataSource.data().length) {
 
                 listBox.select(listBox.items()[typeindex]);
                 var dataList = listBox.dataSource.view()[typeindex];
                 rowObject.Type = dataList;
+                rowObject.IsChanche = true;
                 typeindex += 1;
                 $('#grid').data('kendoGrid').refresh();
                 mainGrid.select("tr:eq(" + rowIndex + ")");
             }
             if (typeindex == listBox.dataSource.data().length) {
+                clearTimeout(timer2);
+                clearTimeout(timer1);
+                $("#iconBtPlaPause").removeClass("glyphicon-pause").addClass("glyphicon-play");
+                $("#btPlay").attr("data-type", "play");
+                mainGrid.select("tr:eq(0)");
+                $(this).attr("disabled", true);
                 $(this).attr("disabled", true);
             }
         }
 
         if (btType == "delete") {
+            removeObject.push(rowObject.Id);
             var grid = $("#grid").data("kendoGrid");
-            $("#grid").find(".k-state-selected").each(function() {
+            $("#grid").find(".k-state-selected").each(function () {
                 grid.removeRow($(this).closest('tr'));
             });
             $('#grid').data('kendoGrid').refresh();
@@ -379,6 +404,8 @@ function dragAndDrop(row, idPosition) {
     mainGrid.select("tr:eq(" + (idPosition) + ")");
     mainGrid.dataSource.getByUid(row.uid).set("dirty", true);
 
+    changePositionIndex(idPosition, row);
+
     var dirtyItems = $.grep(mainGrid.dataSource.view(), function (f) {
         return f.dirty === true;
     });
@@ -411,6 +438,7 @@ function buildListBoxCar() {
             carId = dataItem.id;
 
             typeindex = 0;
+            removeObject = [];
             $("#btSetType").removeAttr("disabled");
 
             typeDataSource = GetDataSourceToType(carId);
@@ -440,13 +468,7 @@ function buildListBoxType() {
         change: function () {
             var index = this.select().index(),
                 dataItem = this.dataSource.view()[index];
-
-            //$("#imgSrc").removeAttr("src");
-            //$("#imgSrc").removeAttr("data-large");
-            //croppImg();
-            //mainDataSource = buildDataSource(false, false, true, carId, dataItem.Id);
-            //var setDataGrid =  $("#grid").data("kendoGrid");
-            //setDataGrid.setDataSource(mainDataSource);
+      
         }
     });
 }
@@ -482,7 +504,10 @@ function buildGrid() {
                     input.kendoDropDownList({
                         dataSource: GetDataSourceToType(carId),
                         dataTextField: "TypeName",
-                        dataValueField: "Id"
+                        dataValueField: "Id",
+                        change: function () {
+                            rowObject.IsChanche = true;
+                        }
                     }).appendTo(container);
                 }
             },
@@ -571,12 +596,35 @@ function buildGrid() {
             for (var a = 0; a < dirtyItems.length; a++) {
                 var thisItem = dirtyItems[a];
                 mainGrid.tbody.find("tr[data-uid='" + thisItem.get("uid") + "']").find("td:eq(0)").addClass("k-dirty-cell");
-                mainGrid.tbody.find("tr[data-uid='" + thisItem.get("uid") + "']").find("td:eq(0)").prepend('<span class="k-dirty"></span>')
+                mainGrid.tbody.find("tr[data-uid='" + thisItem.get("uid") + "']").find("td:eq(0)")
+                    .prepend('<span class="k-dirty"></span>');
             };
         }
     });
 }
 
+function changePositionIndex(indexPosition, item) {
+
+    var prewRow = mainDataSource.data()[indexPosition - 1];
+    var nextRow = mainDataSource.data()[indexPosition + 1];
+    var newPosition;
+
+    if (prewRow != undefined && nextRow != undefined) {
+        newPosition = (prewRow.PositionIndex + nextRow.PositionIndex) / 2;
+    }
+
+    if (nextRow == undefined) {
+        newPosition = (1 + prewRow.PositionIndex) / 2;
+    }
+    if (prewRow == undefined) {
+        newPosition = (0 + nextRow.PositionIndex) / 2;
+    }
+
+    if (newPosition != undefined) {
+        item.PositionIndex = newPosition;
+        item.IsChanche = true;
+    }
+}
 
 function clearImgDiv() {
     

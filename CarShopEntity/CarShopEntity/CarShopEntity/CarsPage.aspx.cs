@@ -296,6 +296,8 @@ namespace CarShopEntity
         public string Fuel { get; set; }
         public string Color { get; set; }
         public string ImgPath { get; set; }
+        public double PositionIndex { get; set; }
+        public bool IsChanche { get; set; }
 
     }
 }

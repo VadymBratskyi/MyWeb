@@ -7,13 +7,13 @@ namespace CarShopEntity.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class car1 : IMigrationMetadata
+    public sealed partial class carr : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(car1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(carr));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708210820452_car1"; }
+            get { return "201709111457184_carr"; }
         }
         
         string IMigrationMetadata.Source

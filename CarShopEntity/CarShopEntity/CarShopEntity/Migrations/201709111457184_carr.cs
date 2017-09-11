@@ -3,7 +3,7 @@ namespace CarShopEntity.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class car1 : DbMigration
+    public partial class carr : DbMigration
     {
         public override void Up()
         {
@@ -54,6 +54,7 @@ namespace CarShopEntity.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false),
+                        PositionIndex = c.Double(nullable: false),
                         ModelName = c.String(nullable: false, maxLength: 50),
                         CarId = c.Guid(),
                         TypeCarId = c.Guid(),

@@ -337,8 +337,7 @@ D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntit
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\EntityFramework.SqlServer.xml
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
-D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
-D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.car1.resources
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.carr.resources
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache

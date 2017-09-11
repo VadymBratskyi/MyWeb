@@ -54,7 +54,7 @@ namespace CarShopEntity.Handler
         {
             var dt = Repository.Select<Car>();
 
-            var cars = dt.ToList();
+            var cars = dt.OrderBy(o => o.CarName).ToList();
 
             return cars;
         }
@@ -79,7 +79,8 @@ namespace CarShopEntity.Handler
 
             var cars = (from car in dt
                        where car.CarId == Id
-                       select new CarView()
+                       orderby car.PositionIndex
+                        select new CarView()
                        {
                            Id = car.Id.ToString(),
                            CarModel = car.ModelName,
@@ -88,7 +89,8 @@ namespace CarShopEntity.Handler
                            Fuel = car.Fuel,
                            Type = car.TypeCar,
                            IssueDate = car.IssueDate.ToString(),
-                           ImgPath = car.ImgPath
+                           ImgPath = car.ImgPath,
+                           PositionIndex = car.PositionIndex
                        })
                        .ToList();
 

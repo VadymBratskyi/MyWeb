@@ -9,6 +9,7 @@ namespace CarShopEntity.ModelDB
     public partial class ModelCar
     {
         public Guid Id { get; set; }
+        public double PositionIndex { get; set; }
         public string ModelName { get; set; }
         public Guid? CarId { get; set; }
         public Car Car { get; set; }

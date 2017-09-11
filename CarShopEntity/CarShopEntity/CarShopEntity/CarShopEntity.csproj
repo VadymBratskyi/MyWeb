@@ -1946,9 +1946,9 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708210820452_car1.cs" />
-    <Compile Include="Migrations\201708210820452_car1.Designer.cs">
-      <DependentUpon>201708210820452_car1.cs</DependentUpon>
+    <Compile Include="Migrations\201709111457184_carr.cs" />
+    <Compile Include="Migrations\201709111457184_carr.Designer.cs">
+      <DependentUpon>201709111457184_carr.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelDB\Car.cs" />
@@ -1985,8 +1985,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708210820452_car1.resx">
-      <DependentUpon>201708210820452_car1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709111457184_carr.resx">
+      <DependentUpon>201709111457184_carr.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
