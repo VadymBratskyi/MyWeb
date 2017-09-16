@@ -428,6 +428,27 @@
     <Content Include="ErrorPage.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="HomePage.aspx" />
+    <Content Include="ImageSource\318.jpg" />
+    <Content Include="ImageSource\320.jpg" />
+    <Content Include="ImageSource\328.jpg" />
+    <Content Include="ImageSource\430.jpg" />
+    <Content Include="ImageSource\440.jpg" />
+    <Content Include="ImageSource\5.jpg" />
+    <Content Include="ImageSource\520i.jpg" />
+    <Content Include="ImageSource\530.jpg" />
+    <Content Include="ImageSource\630.jpg" />
+    <Content Include="ImageSource\730.jpg" />
+    <Content Include="ImageSource\750.jpg" />
+    <Content Include="ImageSource\i8.jpg" />
+    <Content Include="ImageSource\m3.jpg" />
+    <Content Include="ImageSource\m4.jpg" />
+    <Content Include="ImageSource\m5.jpg" />
+    <Content Include="ImageSource\m6.jpg" />
+    <Content Include="ImageSource\mx5.jpg" />
+    <Content Include="ImageSource\mx6.jpg" />
+    <Content Include="ImageSource\sls.jpg" />
+    <Content Include="ImageSource\x5.jpg" />
+    <Content Include="ImageSource\x6.jpg" />
     <Content Include="packages.config" />
     <Content Include="Scripts\cropper.js" />
     <Content Include="Scripts\i18n\grid.locale-ar.js" />
@@ -475,6 +496,12 @@
     <Content Include="Scripts\i18n\grid.locale-vi.js" />
     <Content Include="Scripts\zoomsl-3.0.js" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="ImageSource\.picasa.ini" />
+    <Content Include="Handler\ImgHandler.ashx" />
+    <Content Include="Handler\TextHandler.ashx" />
+    <Content Include="Docs\File1.test" />
+    <Content Include="Docs\File2.test" />
+    <Content Include="Docs\File3.test" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1093,13 +1120,11 @@
     <Content Include="Scripts\kendo\messages\kendo.messages.zh-HK.min.js" />
     <Content Include="Scripts\kendo\messages\kendo.messages.zh-TW.min.js" />
     <Content Include="Scripts\kendo\pako_deflate.min.js" />
-    <Content Include="Scripts\myScript.js" />
     <Content Include="Scripts\scriptTypeCars\typeCars.js" />
     <Content Include="Scripts\zoomsl-3.0.min.js" />
     <Content Include="SiteMaster.Master" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
-    <Content Include="Handler\GetData.ashx" />
     <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-Bold.ttf" />
     <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
     <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
@@ -1932,13 +1957,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Handler\GetData.ashx.cs">
-      <DependentUpon>GetData.ashx</DependentUpon>
-    </Compile>
     <Compile Include="Handler\GetDataKendoList.ashx.cs">
       <DependentUpon>GetDataKendoList.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Handler\JqGridResult.cs" />
+    <Compile Include="Handler\ImgHandler.ashx.cs">
+      <DependentUpon>ImgHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MyHandler.cs" />
+    <Compile Include="Handler\TextHandler.ashx.cs">
+      <DependentUpon>TextHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1988,6 +2016,16 @@
     <EmbeddedResource Include="Migrations\201709111457184_carr.resx">
       <DependentUpon>201709111457184_carr.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestFileHandlerLibrary\TestFileHandlerLibrary.csproj">
+      <Project>{38c33d2a-a1fb-41d4-b838-c1a3c6ee1f70}</Project>
+      <Name>TestFileHandlerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestModulesLibrary\TestModulesLibrary.csproj">
+      <Project>{c751d773-9d4b-4d90-9910-f51dc28a11bd}</Project>
+      <Name>TestModulesLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

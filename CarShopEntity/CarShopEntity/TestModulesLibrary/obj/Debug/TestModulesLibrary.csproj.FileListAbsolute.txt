@@ -1,0 +1,5 @@
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\bin\Debug\TestModulesLibrary.dll
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\bin\Debug\TestModulesLibrary.pdb
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.csprojResolveAssemblyReference.cache
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.dll
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.pdb

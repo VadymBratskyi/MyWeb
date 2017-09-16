@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserLogin>
+  <User>
+    <FirstName>Ruslan</FirstName>
+    <LastName>Foma</LastName>
+  </User>
+  <User>
+    <FirstName>Roma</FirstName>
+    <LastName>Svat</LastName>
+  </User>
+  <User>
+    <FirstName>Vika</FirstName>
+    <LastName>Rud</LastName>
+  </User>
+</UserLogin>
+

@@ -582,6 +582,7 @@ function buildGrid() {
                     itemToMove = mainDataSource.getByUid(thisUid);
                 mainDataSource.remove(itemToMove);
                 mainDataSource.insert(beginningRangePosition, itemToMove);
+                changePositionIndex(beginningRangePosition, itemToMove);
             });
 
             draggedRows.each(function () {

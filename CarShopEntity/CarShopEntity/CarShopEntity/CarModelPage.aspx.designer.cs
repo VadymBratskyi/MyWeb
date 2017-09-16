@@ -11,23 +11,5 @@ namespace CarShopEntity {
     
     
     public partial class CarModelPage {
-        
-        /// <summary>
-        /// ddPrinters control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddPrinters;
-        
-        /// <summary>
-        /// chBothSides control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chBothSides;
     }
 }

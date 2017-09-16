@@ -13,14 +13,9 @@ namespace CarShopEntity
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            loadData();
+          
         }
-
-        private void loadData()
-        {
-            ddPrinters.DataSource = new List<string>(){"Printer_1","Printer_2"};
-            ddPrinters.DataBind();
-        }
+        
     }
 
 }
