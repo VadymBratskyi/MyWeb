@@ -26,7 +26,22 @@ namespace CarShopEntity
             routes.MapPageRoute("Typepage", "Types", "~/TypeCarsPage.aspx");
             routes.MapPageRoute("Clientpage", "Clients", "~/ClientsPage.aspx");
             routes.MapPageRoute("Orderpage", "Orders", "~/OrdersPage.aspx");
+            routes.MapPageRoute("Userpage", "User", "~/MemberShipApy.aspx");
         }
+
+        public override string GetVaryByCustomString(HttpContext context, string custom)
+        {
+            if (custom == "device")
+            {
+                return context.Request.Browser.Type;
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
         protected void Session_Start(object sender, EventArgs e)
         {
 
@@ -44,6 +59,8 @@ namespace CarShopEntity
 
         protected void Application_Error(object sender, EventArgs e)
         {
+            var ex = Server.GetLastError().InnerException;
+            var exx = Server.GetLastError().GetBaseException().Message;
             Response.Redirect("ErrorPage.aspx");
         }
 

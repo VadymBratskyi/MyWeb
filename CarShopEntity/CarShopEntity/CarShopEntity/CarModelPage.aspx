@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="CarModelPage.aspx.cs" Inherits="CarShopEntity.CarModelPage" %>
+﻿<%@ Page Title="" Async="true" Trace="true" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="CarModelPage.aspx.cs" Inherits="CarShopEntity.CarModelPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
 </asp:Content>
@@ -29,6 +29,13 @@
                 <br/>
                 <a href="CarsPage.aspx">carsPage</a>
                 <a href="TypeCarsPage.aspx">typesPage</a>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px">
+            <div class="col-md-12">
+                <a href="AsyncPage.aspx">AsyncPage</a>
+                <h2>OUTPUT</h2>
+                <asp:Label runat="server" ID="Output"></asp:Label>
             </div>
         </div>
     </div>

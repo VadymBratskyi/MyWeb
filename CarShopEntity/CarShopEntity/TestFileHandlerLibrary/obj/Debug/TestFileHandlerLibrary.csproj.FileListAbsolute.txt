@@ -3,3 +3,9 @@ D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestFileHand
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.csprojResolveAssemblyReference.cache
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.dll
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\bin\Debug\TestFileHandlerLibrary.dll
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\bin\Debug\TestFileHandlerLibrary.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.csproj.CoreCompileInputs.cache
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.dll
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestFileHandlerLibrary\obj\Debug\TestFileHandlerLibrary.csprojResolveAssemblyReference.cache

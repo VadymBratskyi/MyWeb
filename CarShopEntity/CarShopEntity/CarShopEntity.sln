@@ -1,13 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShopEntity", "CarShopEntity\CarShopEntity.csproj", "{5EDAB59B-D0BB-469D-B2CE-975501B77D76}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFileHandlerLibrary", "TestFileHandlerLibrary\TestFileHandlerLibrary.csproj", "{38C33D2A-A1FB-41D4-B838-C1A3C6EE1F70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestModulesLibrary", "TestModulesLibrary\TestModulesLibrary.csproj", "{C751D773-9D4B-4D90-9910-F51DC28A11BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPL", "TPL", "{50B21F59-4DDC-4E42-827B-09DCFF08AB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1TPL", "ConsoleApp1TPL\ConsoleApp1TPL.csproj", "{B0A58D61-0ECF-4737-8396-DA1974ADB3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp_TPL2", "ConsoleApp_TPL2\ConsoleApp_TPL2.csproj", "{83FD521D-15A0-465A-AD4E-52DF53A838D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1ASync", "ConsoleApp1ASync\ConsoleApp1ASync.csproj", "{97C697AE-FCCC-460F-A97E-54DF49932182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +35,28 @@ Global
 		{C751D773-9D4B-4D90-9910-F51DC28A11BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C751D773-9D4B-4D90-9910-F51DC28A11BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C751D773-9D4B-4D90-9910-F51DC28A11BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A58D61-0ECF-4737-8396-DA1974ADB3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A58D61-0ECF-4737-8396-DA1974ADB3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A58D61-0ECF-4737-8396-DA1974ADB3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A58D61-0ECF-4737-8396-DA1974ADB3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FD521D-15A0-465A-AD4E-52DF53A838D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FD521D-15A0-465A-AD4E-52DF53A838D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FD521D-15A0-465A-AD4E-52DF53A838D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FD521D-15A0-465A-AD4E-52DF53A838D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C697AE-FCCC-460F-A97E-54DF49932182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C697AE-FCCC-460F-A97E-54DF49932182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C697AE-FCCC-460F-A97E-54DF49932182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C697AE-FCCC-460F-A97E-54DF49932182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0A58D61-0ECF-4737-8396-DA1974ADB3E2} = {50B21F59-4DDC-4E42-827B-09DCFF08AB62}
+		{83FD521D-15A0-465A-AD4E-52DF53A838D2} = {50B21F59-4DDC-4E42-827B-09DCFF08AB62}
+		{97C697AE-FCCC-460F-A97E-54DF49932182} = {50B21F59-4DDC-4E42-827B-09DCFF08AB62}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0566E763-95E3-4E95-8065-88DB545ED335}
 	EndGlobalSection
 EndGlobal

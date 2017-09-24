@@ -3,3 +3,9 @@ D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesL
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.csprojResolveAssemblyReference.cache
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.dll
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\bin\Debug\TestModulesLibrary.dll
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\bin\Debug\TestModulesLibrary.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.csproj.CoreCompileInputs.cache
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.dll
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\TestModulesLibrary\obj\Debug\TestModulesLibrary.csprojResolveAssemblyReference.cache

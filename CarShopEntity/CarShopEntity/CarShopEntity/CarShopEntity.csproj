@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,10 +50,14 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -65,6 +70,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -74,10 +80,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AsyncPage.aspx" />
     <Content Include="CarEditPage.aspx" />
     <Content Include="CarInfoPage.aspx" />
     <Content Include="CarModelPage.aspx" />
+    <Content Include="ChangePassword.aspx" />
     <Content Include="Content\cropper.css" />
+    <Content Include="Content\files\TextF.txt" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\img\2_size.gif" />
@@ -425,6 +434,10 @@
     <Content Include="Content\kendo\Uniform\sprite_kpi_2x.png" />
     <Content Include="Content\main.css" />
     <Content Include="Content\typeCarsCss\typeCars.css" />
+    <Content Include="Controls\ControlObj.ascx" />
+    <Content Include="Controls\TabsUserControl3.ascx" />
+    <Content Include="Controls\WebUserControl1.ascx" />
+    <Content Include="Controls\WebUserControl2.ascx" />
     <Content Include="ErrorPage.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="HomePage.aspx" />
@@ -449,7 +462,13 @@
     <Content Include="ImageSource\sls.jpg" />
     <Content Include="ImageSource\x5.jpg" />
     <Content Include="ImageSource\x6.jpg" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="MemberShipApy.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Private\Page1.aspx" />
+    <Content Include="Private\Page2.aspx" />
+    <Content Include="RecoveryPassword.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\cropper.js" />
     <Content Include="Scripts\i18n\grid.locale-ar.js" />
     <Content Include="Scripts\i18n\grid.locale-bg.js" />
@@ -502,6 +521,7 @@
     <Content Include="Docs\File1.test" />
     <Content Include="Docs\File2.test" />
     <Content Include="Docs\File3.test" />
+    <Content Include="Private\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1915,6 +1935,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncPage.aspx.cs">
+      <DependentUpon>AsyncPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AsyncPage.aspx.designer.cs">
+      <DependentUpon>AsyncPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CarEditPage.aspx.cs">
       <DependentUpon>CarEditPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1943,6 +1970,42 @@
     <Compile Include="CarsPage.aspx.designer.cs">
       <DependentUpon>CarsPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlObj.ascx.cs">
+      <DependentUpon>ControlObj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlObj.ascx.designer.cs">
+      <DependentUpon>ControlObj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Person.cs" />
+    <Compile Include="Controls\TabsUserControl3.ascx.cs">
+      <DependentUpon>TabsUserControl3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TabsUserControl3.ascx.designer.cs">
+      <DependentUpon>TabsUserControl3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebUserControl2.ascx.cs">
+      <DependentUpon>WebUserControl2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WebUserControl2.ascx.designer.cs">
+      <DependentUpon>WebUserControl2.ascx</DependentUpon>
+    </Compile>
     <Compile Include="DB\CodeContext.cs" />
     <Compile Include="DB\InitDb.cs" />
     <Compile Include="DB\Repository.cs" />
@@ -1967,6 +2030,7 @@
     <Compile Include="Handler\TextHandler.ashx.cs">
       <DependentUpon>TextHandler.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Cachinng.cs" />
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1974,9 +2038,23 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201709111457184_carr.cs" />
-    <Compile Include="Migrations\201709111457184_carr.Designer.cs">
-      <DependentUpon>201709111457184_carr.cs</DependentUpon>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShipApy.aspx.cs">
+      <DependentUpon>MemberShipApy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShipApy.aspx.designer.cs">
+      <DependentUpon>MemberShipApy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709161254028_cars.cs" />
+    <Compile Include="Migrations\201709161254028_cars.Designer.cs">
+      <DependentUpon>201709161254028_cars.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelDB\Car.cs" />
@@ -1989,7 +2067,35 @@
     <Compile Include="ModelDB\ModelConfig\TypeCarConfig.cs" />
     <Compile Include="ModelDB\Order.cs" />
     <Compile Include="ModelDB\TypeCar.cs" />
+    <Compile Include="Private\Page1.aspx.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\Page1.aspx.designer.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private\Page2.aspx.cs">
+      <DependentUpon>Page2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\Page2.aspx.designer.cs">
+      <DependentUpon>Page2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecoveryPassword.aspx.cs">
+      <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecoveryPassword.aspx.designer.cs">
+      <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SiteMaster.Master.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2013,11 +2119,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709111457184_carr.resx">
-      <DependentUpon>201709111457184_carr.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TestFileHandlerLibrary\TestFileHandlerLibrary.csproj">
       <Project>{38c33d2a-a1fb-41d4-b838-c1a3c6ee1f70}</Project>
       <Name>TestFileHandlerLibrary</Name>
@@ -2026,6 +2127,14 @@
       <Project>{c751d773-9d4b-4d90-9910-f51dc28a11bd}</Project>
       <Name>TestModulesLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709161254028_cars.resx">
+      <DependentUpon>201709161254028_cars.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
