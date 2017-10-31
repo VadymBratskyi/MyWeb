@@ -1,0 +1,6 @@
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\ConsoleApp1ASync\bin\Debug\ConsoleApp1ASync.exe.config
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\ConsoleApp1ASync\bin\Debug\ConsoleApp1ASync.exe
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\ConsoleApp1ASync\bin\Debug\ConsoleApp1ASync.pdb
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\ConsoleApp1ASync\obj\Debug\ConsoleApp1ASync.csproj.CoreCompileInputs.cache
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\ConsoleApp1ASync\obj\Debug\ConsoleApp1ASync.exe
+D:\job\GitHub\MyWeb\CarShopEntity\CarShopEntity\ConsoleApp1ASync\obj\Debug\ConsoleApp1ASync.pdb

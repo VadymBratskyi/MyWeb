@@ -4,6 +4,8 @@ using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -15,17 +17,24 @@ namespace CarShopEntity
     public partial class CarsPage : System.Web.UI.Page
     {
         
-        protected void Page_Init(object sender, EventArgs e)
-        {
-            var data = Repository.Select<ModelCar>().Include(o => o.Car).Include(o => o.TypeCar);
-
-            lbRowtable.Text = GetRowForTable(data);
-            LoadControlsList();
-        }
         protected void Page_Load(object sender, EventArgs e)
         {
+            Trace.Write("Thread="+Thread.CurrentThread.ManagedThreadId);
+            PageAsyncTask task = new PageAsyncTask(GetDatas);
+            RegisterAsyncTask(task);
 
         }
+
+        private async Task GetDatas()
+        {
+            await Task.Run(() =>
+            {
+                var data = Repository.Select<ModelCar>().Include(o => o.Car).Include(o => o.TypeCar);
+                lbRowtable.Text = GetRowForTable(data);
+                LoadControlsList();
+            });
+        }
+
 
         private void LoadControlsList()
         {

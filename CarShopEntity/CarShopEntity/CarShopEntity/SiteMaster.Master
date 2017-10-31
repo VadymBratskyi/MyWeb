@@ -37,6 +37,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <%= MenuItems %>
+                    <li><a href="/Private/Page1.aspx" style="color:white; font-size:15px; font-weight:bold">Page 1</a></li>
+                    <li><a href="/Private/Page2.aspx" style="color:white; font-size:15px; font-weight:bold">Page 2</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -47,7 +49,25 @@
     </nav>
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div style="text-align:right; padding-right:30px;">
+                <asp:LoginView runat="server" ID="LoginView1">
+                    <AnonymousTemplate>
+                        <span style="font-weight:bold"> Welcome, guest </span>
+                        <a href="Register.aspx">Registration</a>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <span style="font-weight:bold"> Welcome,
+                        <asp:LoginName runat="server" ID="logName" />
+                            </span>
+                    </LoggedInTemplate>
+        
+                </asp:LoginView>
+                        
+                <asp:LoginStatus runat="server" ID="logServer" LogoutAction="Refresh"/>                
+            </div>
+              
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">                 
             </asp:ContentPlaceHolder>
         </div>
     </form>
