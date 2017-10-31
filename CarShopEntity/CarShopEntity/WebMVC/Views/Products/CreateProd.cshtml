@@ -1,0 +1,41 @@
+﻿@using WebMVC.Models
+@model Product
+
+<h1>Create New Product</h1>
+<div>
+    @using (Html.BeginForm())
+    {
+        <fieldset>
+            <legend>Product</legend>
+        </fieldset>
+
+        <div class="editor-label">
+            @Html.LabelFor(o=>o.Name)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(o => o.Name)
+            @Html.ValidationMessageFor(o=>o.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(o => o.Price)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(o => o.Price)
+            @Html.ValidationMessageFor(o => o.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(o => o.Role)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(o => o.Role)
+            @Html.ValidationMessageFor(o => o.Name)
+        </div>
+
+        <p>
+            <input type="submit" class="btn btn-info" value="создать" /> | 
+            @Html.ActionLink("отмена", "Index")
+        </p>
+    }
+</div>

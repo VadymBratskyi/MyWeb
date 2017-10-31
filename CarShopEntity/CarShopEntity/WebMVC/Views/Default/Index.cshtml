@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Header
+{
+    <h2>Hello World!!!! header</h2>
+}
+
+
+<h2>Index</h2>
+<h3>@Html.ActionLink("testHeader", "Index", "Test")</h3>
+<br />
+<h3>@Html.ActionLink("Products", "Index", "Products")</h3>
+<br />
+<br/>
+<hr/>
+<h4>@Html.ActionLink("Myindex", "MIndex", "Default")</h4>
+<h4><a href="/Public/Default/MIndex">my</a></h4>
+<h4><a href="/Default/MIndex/123">myId</a></h4>
+<h4><a href="/Default/GetParam/3333">myCustomId</a></h4>
+<h4><a href="/Default/GetSumm/5/9">getSumm</a></h4>
+<p>
+    <h3> @Html.RouteLink("Link1", new { controller = "Default", action = "MIndex", id = 123 })</h3>
+    <h3> <a href="@Url.Action("MIndex", "Default", new { id = 123 })">@Url.Action("MIndex", "Default", new { id = 123 })</a></h3>
+</p>
+<p>
+    @{
+        int val = 123;
+        string message = "<strong>Hello World!!</strong>";
+    }
+    
+    <h2>@val</h2>
+    <h2>@message</h2>
+    <h2>@Html.Raw(message)</h2>
+    <br />
+    <br />
+    <br />
+    
+</p>
+<h3>@Html.ActionLink("myView", "MyView", "Default")</h3>
+<h3>@Html.ActionLink("PostGetView", "Index", "Home")</h3>
+
+
+@section Footer
+{
+    <h2>Hello World!!!! footer</h2>
+    
+}

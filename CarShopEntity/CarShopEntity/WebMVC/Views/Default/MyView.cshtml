@@ -1,0 +1,31 @@
+﻿@using WebMVC.Extention
+
+@{
+    ViewBag.Title = "MyView";
+}
+
+<h2>MyView</h2>
+@ViewBag.Message
+
+<form method="post" action="/Default/FormResult">
+    <input type="text" name="message"/>
+    <input type="submit" value="Send Message"/>
+</form>
+@helper CreateList(string [] items)
+{
+    <ul>
+        @foreach (var item in items)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+
+@CreateList(ViewBag.Fruits)
+
+@Html.MyMessage("Hello Vadim/ Extention method")
+
+@Html.Label("Check")
+@Html.CheckBox("Check")
+@Html.TextBox("myTxt", "val", new { style = "color:red;" })
+@Html.TextArea("myArea", "val", 5, 20, null)

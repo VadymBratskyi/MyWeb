@@ -1,0 +1,53 @@
+﻿
+@model IEnumerable<WebMVC.Models.Product>
+
+@{
+    ViewBag.Title = "MIndex";    
+}
+
+<h2>MIndex</h2>
+
+
+    @foreach (var pr in Model)
+    {
+        <h1>@pr.Name , @pr.Price</h1>
+    }
+
+ID: 
+<h3>@ViewBag.Value</h3>
+<br />
+<br/>
+SUM: 
+<h3>@ViewBag.Result</h3>
+<br/>
+<br/>
+<br/>
+CATCHAll
+<br/>
+<br/>
+<h3>@ViewBag.all</h3>
+<br />
+<br />
+<br/>
+@Html.Partial("MyPartialView")
+<br />
+<br />
+<br />
+<br/>
+@Html.Action("GetCurrentDate")
+<br />
+<br />
+<br/>
+@Html.Action("GetValueParam", new { val = "Hellloo"})
+<br />
+<br />
+<br />
+<br/>
+@{
+    ViewBag.Title = "Index";
+    var grid = new WebGrid(Model);
+}
+
+<h2>WebGrid</h2>
+@grid.GetHtml()
+

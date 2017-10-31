@@ -346,3 +346,4 @@ D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntit
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\TestFileHandlerLibrary.pdb
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\TestModulesLibrary.dll
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\TestModulesLibrary.pdb
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.CoreCompileInputs.cache

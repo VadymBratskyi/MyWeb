@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("Index", "Home"))
+{
+    <label>X</label>@Html.TextBox("X")
+    <br/>
+    <label>Y</label>@Html.TextBox("Y")
+    <br/>
+    if (ViewBag.Result != null)
+    {
+        @ViewBag.Result
+     }
+    <input type="submit" name="subbutton" value="Get value"/>
+}
+
+<br />
+<br />
+<br/>
+<p>@Html.ActionLink("GoTo_1","GoToGoogle", "Home")</p>
+<p>@Html.ActionLink("GoTo_2", "GoToYoutube", "Home")</p>
+<p>@Html.ActionLink("GoTo_3", "GoToItvdn", "Home")</p>
+<p>@Html.ActionLink("GoTo_4", "GoToOtherMethod", "Home")</p>
+<p>@Html.ActionLink("GoTo_5", "GoToOtherAction", "Home")</p>
+<p>@Html.ActionLink("GoTo_6", "GoToContent", "Home")</p>
+<p>@Html.ActionLink("GoTo_7", "GoToEmpty", "Home")</p>
+<p>@Html.ActionLink("GoTo_8", "Action1Json", "Home")</p>
+<p>
+    <a href="#" id="sendRequest">Action2(AjaxPost)</a>
+    <div id="result"></div>
+    
+    <script>
+        $(document).ready(function() {
+            $("#sendRequest").click(function() {
+                $.ajax({
+                    url: "@Url.Action("Action2Json","Home")",
+
+                    data: JSON.stringify({
+                        name: "Vados",
+                        year: 28
+                    }),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    type: "POST",
+                    success: function(data) {
+                        $("#result")
+                            .append("Name: " + data.Name + "<br/>")
+                            .append("Year: " + data.Age + "<br/>")
+                            .append("Descriptio: " + data.Description + "<br/>");
+                    }
+                });
+            });
+        });  
+    </script>
+</p>
+

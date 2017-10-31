@@ -1,0 +1,18 @@
+﻿@using WebMVC.Models 
+@model Role
+
+<ul>  
+    @foreach (Role val in Enum.GetValues(typeof(Role)))
+    {
+    <li>
+        @if (val == Model)
+        {
+            <b>@val</b>
+        }
+        else
+        {
+            @val
+        }
+    </li>
+    }
+</ul>

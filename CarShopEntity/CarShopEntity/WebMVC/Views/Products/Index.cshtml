@@ -1,0 +1,52 @@
+﻿@using WebMVC.Models
+@model IEnumerable<Product>
+    
+<h1>Indecs products</h1>
+<p>
+    @Html.ActionLink("Create New", "CreateProd")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(o=>o.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(o => o.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(o => o.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(o => o.Role)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (Product prod in Model)
+    {
+        <tr>
+            <td>
+                @prod.Id
+            </td>
+            <td>
+                @prod.Name
+            </td>
+            <td>
+                @prod.Price
+            </td>
+            <td>
+                @prod.Role
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = prod.Id })
+                @Html.ActionLink("Details", "Details", new { id = prod.Id })
+                @Html.ActionLink("Delete", "Delete", new {id = prod.Id})
+            </td>
+        </tr>
+    }
+</table>
+<br /><br /><br /><br/>
+<p>
+    @Html.ActionLink("клиент", "Index", "Customers")
+    <br/>
+    @Html.ActionLink("заказы","Index","Orders")
+</p>

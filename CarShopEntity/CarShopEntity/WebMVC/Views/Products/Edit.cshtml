@@ -1,0 +1,55 @@
+﻿@using WebMVC.Models
+@model Product
+    
+<h1> Edit Product</h1>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(o=>o.Id) 
+            </td>
+            <td>
+                @Html.EditorFor(o=>o.Id)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(o=>o.Name) 
+            </td>
+            <td>
+                @Html.EditorFor(o=>o.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(o=>o.Price) 
+            </td>
+            <td>
+                @Html.EditorFor(o=>o.Price)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(o => o.Description)
+            </td>
+            <td>
+                @Html.EditorFor(o => o.Description)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(o => o.Role)
+            </td>
+            <td>
+                @Html.EditorFor(o => o.Role)
+            </td>
+        </tr>
+        <p>
+            <input type="submit" value="сохранить"/> |
+            @Html.ActionLink("отмена", "Index")
+        </p>
+    </table>
+}
+

@@ -1,0 +1,11 @@
+﻿@using WebMVC.Models
+@model Role
+    
+<select id="Role" name="Role">
+    @foreach (Role val in Enum.GetValues(typeof(Role)))
+    {
+        <option value="@val" @(Model == val ? "selected=\"selected\"" : "")>
+            @val
+        </option>
+    }
+</select>
