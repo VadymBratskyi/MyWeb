@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using WebMVC.Models;
@@ -12,14 +13,25 @@ namespace WebMVC.Controllers
 {
     public class OrdersController : Controller
     {
-        private ProductContext db = new ProductContext();
-
+       // [ThreadStatic]
+        private  ProductContext db = new ProductContext();
+        
         // GET: Orders
         public ActionResult Index()
         {
-            var orders = db.Orders.Include(o => o.Customer).Include(o => o.Product);
-            return View(orders.ToList());
+            
+            ViewBag.Customers = db.Customers.ToList();
+            return View();
         }
+        [HttpPost]
+        public ActionResult Index(string id)
+        {
+            ViewBag.Customers = db.Customers.ToList();
+            var custId = Convert.ToInt32(id);
+            var ord = db.Orders.FirstOrDefault(o=>o.CustomerId == custId);
+            return View("Index", ord);
+        }
+
 
         // GET: Orders/Details/5
         public ActionResult Details(int? id)
@@ -132,5 +144,44 @@ namespace WebMVC.Controllers
             }
             base.Dispose(disposing);
         }
+
+
+        public ActionResult OrderBody(object id)
+        {
+            var data = db.Orders.Include(o=>o.Product).Include(o=>o.Customer);
+            var ord = id as Orders;
+            if (ord != null)
+            {
+                data = data.Where(o => o.CustomerId == ord.CustomerId);
+            }
+
+            return PartialView(data);
+        }
+
+        public ActionResult OrderBodyAjax(string id)
+        {
+            var data = db.Orders.Include(o => o.Product).Include(o => o.Customer);
+            var ord = Convert.ToInt32(id);
+            if (ord != 0)
+            {
+                data = data.Where(o => o.CustomerId == ord);
+            }
+           
+            return View("orderBody",data);
+        }
+
+
+        //public ActionResult OrderBodyAjaxJson(string id)
+        //{
+        //    var data = db.Orders.Include(o => o.Product).Include(o => o.Customer);
+        //    var ord = Convert.ToInt32(id);
+        //    if (ord != 0)
+        //    {
+        //        data = data.Where(o => o.CustomerId == ord);
+        //    }
+
+        //    return Json(data,JsonRequestBehavior.AllowGet);
+        //}
+
     }
 }

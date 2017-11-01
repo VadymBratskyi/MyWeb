@@ -339,7 +339,6 @@ D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntit
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\Newtonsoft.Json.xml
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.dll
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.pdb
-D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.carr.resources
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.GenerateResource.Cache
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csprojResolveAssemblyReference.cache
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\TestFileHandlerLibrary.dll
@@ -347,3 +346,5 @@ D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntit
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\TestModulesLibrary.dll
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\TestModulesLibrary.pdb
 D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.csproj.CoreCompileInputs.cache
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\VadimB\Projects\GitHubProjects\MyWeb\CarShopEntity\CarShopEntity\CarShopEntity\obj\Debug\CarShopEntity.Migrations.cars.resources
