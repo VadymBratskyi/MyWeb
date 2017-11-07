@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section script
+{
+
+    <script>
+        var appp = angular.module("helloWorldApp", []);
+
+        appp.controller("myControl",
+            function($scope) {
+
+                $scope.items = [
+                    { name: "Item_1", value: "Val_1" },
+                    { name: "Item_2", value: "Val_2" },
+                    { name: "Item_3", value: "Val_3" },
+                    { name: "Item_4", value: "Val_4" },
+                    { name: "Item_5", value: "Val_5" },
+                    { name: "Item_6", value: "Val_6" }
+                ];
+
+                $scope.options = [
+                    { display: "Table", value: "table" },
+                    { display: "List", value: "list" },
+                    { display: "List with marker", value: "badgest" }
+                ];
+
+                $scope.mode = $scope.options[0];
+
+
+
+                $scope.list = ["item_1", "item_2", "item_3"];
+                $scope.selected = "item_3";
+
+                $scope.list2 = [
+                    { prop1: "item_1", prop2: 1 },
+                    { prop1: "item_2", prop2: 2 },
+                    { prop1: "item_3", prop2: 3 }
+                ];
+                $scope.selected2 = $scope.list2[0];
+
+                $scope.url = '@Url.Action("tableView", "Home")';
+
+
+                $scope.urlList = '@Url.Action("listView", "Home")';
+                $scope.urlTable = '@Url.Action("tableView", "Home")';
+
+                $scope.urlData = $scope.urlList;
+
+                $scope.showList = function() {
+                    $scope.urlData = $scope.urlList;
+                }
+
+                $scope.showTable = function() {
+                    $scope.urlData = $scope.urlTable;
+                }
+
+            });
+
+    </script>
+
+    <style>
+        .class1 {
+            background-color: lightgreen;
+        }
+        .class2 {
+            background-color: lightblue
+        }
+    </style>
+
+}
+<h2>Index2</h2>
+
+<div ng-controller="myControl">
+    On-way
+    <h3>Count items: {{items.length}}</h3>
+    <h3>Count items: <span ng-bind="items.length"></span></h3>
+    <div ng-bind-template="First item: {{items[0].name}}. Second item {{items[1].name}}"></div>
+    <ul>
+        <li ng-repeat="itm in items">{{itm.name}}</li>
+    </ul>
+    <div>
+        <input class="form-control" value="{{items[0].name}}"/>
+    </div>
+    <br/>
+    <p ng-repeat="item in items">
+        @*<span ng-repeat="prop in item">{{$index+1}} {{prop}},</span>*@
+        <span ng-repeat="(key,value) in item">{{key}}={{value}},</span>
+    </p>
+    <table class="table table-striped table-hover" ng-cloak>
+        <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>Value</th>
+        </thead>
+        <tbody>                             @* $even *@
+        <tr ng-repeat="itm in items" ng-class="$odd ? 'class1' : 'class2' ">
+            <td>{{$index+1}},  <span ng-if="$first">First</span> <span ng-if="$last">Last</span></td>
+            <td>{{itm.name}}</td>
+            <td>{{itm.value}}</td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <hr/>
+    Two-way
+    <div>
+        <input class="form-control" ng-model="items[1].name"/>
+        <select class="form-control" ng-model="selected" ng-options="item for item in list"></select>
+        <select class="form-control" ng-model="selected2" ng-options="item.prop1 for item in list2 track by item.prop2"></select>
+        <br />
+        <br />
+        <br/>
+        selected text: {{selected2.prop1}}
+        <br/>
+        selected value: {{selected2.prop2}}
+    </div>
+    
+    <div>
+        <h3>HTMl element</h3>
+        <ng-include src="url"></ng-include>
+        
+        <h3>HTML attribute</h3>
+        <div ng-include="url"></div>
+   
+        <h3>CSS class</h3>
+        <span class="ng-include:url;"></span>
+    </div>
+    <div>
+        <h1>Grid/List</h1>
+        <div class="btn-group">
+            <button class="btn btn-default" ng-click="showList()">List</button>
+            <button class="btn btn-default"  ng-click="showTable()">Table</button>
+        </div>
+        <div ng-include="urlData"></div>
+    </div>
+    
+    <div class="panel">
+        <select class="form-control" ng-model="mode" ng-options="item.display for item in options track by item.value"></select>
+        
+        <div ng-switch on="mode.value" style="margin-top: 20px;">
+            
+            <table class="table" ng-switch-when="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="itm in items">
+                    <td>{{$index+1}}</td>
+                    <td>{{itm.name}}</td>
+                    <td>{{itm.value}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <ul class="list-group" ng-switch-when="list">
+                <li ng-repeat="itm in items">{{itm.name}} ({{itm.value}})</li>
+            </ul>
+            
+            <ol class="list-group list-group-item-heading" ng-switch-when="badgest">
+                <li ng-repeat="itm in items">{{itm.name}} <span class="badge">{{itm.value}}</span></li>
+            </ol>
+
+        </div>
+    </div>
+</div>

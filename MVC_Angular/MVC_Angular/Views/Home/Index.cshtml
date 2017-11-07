@@ -2,6 +2,138 @@
 @{
     ViewBag.Title = "Index";
 }
+@section script
+{
+
+    <script>
+        
+        var model = "Hello World!!";
+
+        var model2 = {
+            user: "User-1",
+            courses: [
+                { name: "HTML,CSS", passed: true },
+                { name: "Js", passed: true },
+                { name: "Entity", passed: true },
+                { name: "HTML5", passed: false },
+                { name: "Angular", passed: false }
+            ]
+        };
+
+        //Module
+        var helloWorldApp = angular.module("helloWorldApp", []);
+
+        //Controller
+        helloWorldApp.controller("HelloWorldCtrl",
+
+            function($scope) {
+
+                $scope.message = model;
+                $scope.list = model2;
+
+                $scope.clickHandler = function() {
+                    $scope.message = $scope.text;
+                }
+
+                $scope.addNewCourse = function() {
+
+                    $scope.list.courses.push({
+                        name: $scope.courseName,
+                        passed: false
+                });
+
+                    $scope.courseName = "";
+                }
+
+                $scope.setStyle = function (passed) {
+                    return passed ? "color:green" : "color:red; font-weight:bold";
+                };
+
+                $scope.showText = function (passed) {
+                    return passed ? "yes" : "no";
+                };
+
+            });
+
+
+    </script>
+}
 
 <h2>Index</h2>
+<div ng-controller="HelloWorldCtrl">
 
+    <h3>{{message}}</h3>
+    <input ng-model="text" />
+    <button ng-click="clickHandler()">Update</button>
+    <br />
+    <hr />
+    <br />
+    <div class="container">
+        <div class="page-header">
+            <div class="page-header">
+                <h1>Curses</h1>
+            </div>
+            <h3>user: {{list.user}} Count curses -{{list.courses.length}}</h3>
+            <h3>user: User1. Count curses -5</h3>
+        </div>
+        <div class="panel">
+            <div class="input-group">
+                <input type="text" class="form-control" style="max-width: 100%" ng-model="courseName">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" ng-click="addNewCourse()">Add</button>
+                </span>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="danger">
+                        <th>Curs</th>
+                        <th></th>
+                        <th>Finished</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>
+                            HTML,CSS
+                        </td>
+                        <td></td>
+                        <td>YES</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>
+                            JS
+                        </td>
+                        <td></td>
+                        <td>YES</td>
+                    </tr>
+                    @* Cicle foreach *@
+                    <tr ng-repeat="course in list.courses">
+                        <td>
+                            {{course.name}}
+                        </td>
+                        <td>
+                            <input type="checkbox" ng-model="course.passed" />
+                        </td>
+                        <td>
+                            <span style="{{setStyle(course.passed)}}">
+                                {{showText(course.passed)}}
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    @Html.ActionLink("Spinner", "Spinner")
+    @Html.ActionLink("LoadSpinner", "LoadSpinner")
+    <br />
+    <div class="panel">
+        @Html.ActionLink("index2", "Index2", "Home", new { @class = "btn btn-default" })
+        @Html.ActionLink("DomValid", "DomValid", "Home", new { @class = "btn btn-default" })
+</div>
+
+</div>

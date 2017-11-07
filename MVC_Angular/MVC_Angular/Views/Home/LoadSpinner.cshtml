@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "LoadSpinner";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section script
+{
+    <script>
+        var apsp = angular.module('helloWorldApp', ["ngMaterial"]);
+
+        apsp.controller("HelloWorldCtrl",
+            function($scope) {
+                $scope.hello = "load..";
+            });
+
+
+    </script>
+
+    <style>
+        #num {
+            display: inline;
+            top: 150px;
+            margin-left: -70px;
+            position: absolute;
+            font-size: large;
+            text-align: center;
+            /* Note, this must be half the font size */
+            z-index: 100;
+        }
+        .md-progress-circular .path {
+            stroke: green;
+        }
+    </style>
+
+}
+
+<h2>LoadSpinner</h2>
+<div>
+    <md-content layout-padding >
+        <div layout="row" layout-sm="column" layout-align="space-around">
+            <md-progress-circular class="" md-mode="indeterminate" md-diameter="96"></md-progress-circular>
+            <div id="num"> load.. </div>
+        </div>
+    </md-content>
+</div>

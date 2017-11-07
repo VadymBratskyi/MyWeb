@@ -13,5 +13,32 @@ namespace MVC_Angular.Controllers
         {
             return View();
         }
+        public ActionResult Index2()
+        {
+            return View();
+        }
+        public ActionResult Spinner()
+        {
+            return View();
+        }
+
+        public ActionResult LoadSpinner()
+        {
+            return View();
+        }
+
+        public ActionResult listView()
+        {
+            return View();
+        }
+        public ActionResult tableView()
+        {
+            return View();
+        }
+
+        public ActionResult DomValid()
+        {
+            return View();
+        }
     }
 }

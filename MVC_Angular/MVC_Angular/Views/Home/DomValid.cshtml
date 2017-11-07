@@ -1,0 +1,257 @@
+﻿
+@{
+    ViewBag.Title = "DomValid";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section script
+{
+    <script>
+        var app = angular.module("helloWorldApp", []);
+
+
+        app.controller("domCtr",
+            function($scope) {
+
+                //$scope.task = {
+                //    action: "Task 1",
+                //    priority: "High",
+                //    complete: false
+                //}
+
+                $scope.tasks = [
+                    { action: "Task 1", complete: false, priority: "Normal" },
+                    { action: "Task 2", complete: true, priority: "Normal" },
+                    { action: "Task 3", complete: false, priority: "Normal" },
+                    { action: "Task 4", complete: true, priority: "Normal" }
+                ];
+
+                $scope.addTask = function(task) {
+                    if (angular.isDefined(task) &&
+                        angular.isDefined(task.action) &&
+                        angular.isDefined(task.priority)) {
+                        $scope.tasks.push({
+                            action: task.action,
+                            priority: task.priority,
+                            complate:false
+                        });
+                    }
+                }
+
+
+                $scope.hideElem1 = false;
+                $scope.hideElem2 = false;
+                $scope.hideElem3 = false;
+
+                $scope.showElem1 = false;
+                $scope.showElem2 = false;
+                $scope.showElem3 = false;
+
+                $scope.remElem1 = true;
+                $scope.remElem2 = true;
+                $scope.remElem3 = true;
+
+                $scope.selectClass = "";
+
+                $scope.SetColor = function() {
+                    //$scope.selectClass = "bord redColor";
+                    $scope.selectClass = ["bord", "redColor"];
+                }
+
+                $scope.StyleObj = {
+                    color: false,
+                    border: false,
+                    size: false
+                };
+
+                $scope.StyleObj1 = {
+                    color: "white",
+                    backgroundColor: "red",
+                    border: "3px solid yellow",
+                    marginTop: "10px",
+                    height: "100px",
+                    width: "100px"
+                };
+
+
+                $scope.GetEvent = function(event) {
+                    console.log(event);
+                    $scope.sms = event.type;
+                }
+
+
+            });
+
+    </script>
+    <style>
+
+        .color {
+            background-color: gold;
+        }
+
+        .border {
+            border: 5px solid black !important;
+        }
+
+        .size {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .lightGreen {
+            background-color: lightgreen !important;
+        }
+        .lightBlue {
+            background-color: lightblue !important;
+        }
+        .redColor {
+            background-color: red !important;
+        }
+        .bord {
+            border: 2px dashed yellow !important;
+            border-radius: 5px !important;
+        }
+
+        .testJS div {
+            display: inline-block;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin: 14px;
+            padding: 30px;
+        }
+
+        #d1 {
+            background-color: lightskyblue
+        }
+        #d2 {
+            background-color: lightgreen
+        }
+        #d3 {
+            background-color: lightsalmon
+        }
+        #d11 {
+            background-color: darkorange
+        }
+
+        #d22 {
+            background-color: darkblue
+        }
+
+        #d33 {
+            background-color: darkgreen
+        }
+        #d111 {
+            background-color: red
+        }
+
+        #d222 {
+            background-color: aqua
+        }
+
+        #d333 {
+            background-color: deeppink
+        }
+    </style>
+}
+
+<h2>DomValid</h2>
+<div ng-controller="domCtr">
+    <div class="container text-center">
+        <div class="col-md-4">
+            <div class="well">
+                <div class="form-group row ">
+                    <label for="actionText">Action:</label>
+                    <input id="actionText" class="form-control" ng-model="task.action"/>
+                </div>
+                <div class="form-group row">
+                    <label for="actionPriority">Priority:</label>
+                    <select id="actionPriority" class="form-control" ng-model="task.priority">
+                        <option>High</option>
+                        <option>Normal</option>
+                        <option>Low</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-block" ng-click="addTask(task)">Add</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <h3>
+                            Count not complated task
+                            <span class="label label-info"> {{ (tasks | filter:{complete:false}).length }} </span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Priority</th>
+                    <th>Complete</th>
+                </tr>
+                </thead>
+                <tr ng-repeat="itm in tasks">
+                    <td>{{itm.action}}</td>
+                    <td>{{itm.priority}}</td>
+                    <td>
+                        <input type="checkbox" ng-model="itm.complete"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+      
+
+    </div>
+    
+    <hr/>
+    <div class="testJS">
+        <div style="float: left">
+            <input type="checkbox" ng-model="hideElem1"/>Hide Element 1 <br/>
+            <input type="checkbox" ng-model="hideElem2"/>Hide Element 2 <br/>
+            <input type="checkbox" ng-model="hideElem3"/>Hide Element 3 <br/>
+            <hr/>
+            <input type="checkbox" ng-model="showElem1"/>Show Element 1 <br/>
+            <input type="checkbox" ng-model="showElem2"/>Show Element 2 <br/>
+            <input type="checkbox" ng-model="showElem3"/>Show Element 3 <br/>
+            <hr/>
+            <input type="checkbox" ng-model="remElem1"/>Remove Element 1 <br/>
+            <input type="checkbox" ng-model="remElem2"/>Remove Element 2 <br/>
+            <input type="checkbox" ng-model="remElem3"/>Remove Element 3 <br/>
+            <hr/>
+            <p class="radio">
+                <input type="radio" ng-model="selectClass" value="lightGreen" name="color"/>All Green <br/>
+                <input type="radio" ng-model="selectClass" value="lightBlue" name="color"/>All Bluee<br/>
+                <input type="radio" ng-model="selectClass" value="" name="color"/>Default color<br/>
+            </p>
+            <button class="btn btn-danger" ng-click="SetColor();">Set Red Color</button>
+            <hr/>
+            <p class="checkbox">
+                <input type="checkbox" ng-model="styleObj.color"/>Color <br/>
+                <input type="checkbox" ng-model="styleObj.border"/>Border<br/>
+                <input type="checkbox" ng-model="styleObj.size"/>Size<br/>
+            </p>
+        </div>
+        <div id="d1" ng-hide="hideElem1" ng-class="selectClass">Element 1</div>
+        <div id="d2" ng-hide="hideElem2" ng-class="selectClass">Element 2</div>
+        <div id="d3" ng-hide="hideElem3" ng-class="selectClass">Element 3</div>
+        <br/>
+        <div id="d11" ng-show="showElem1" ng-class="selectClass">Element 1</div>
+        <div id="d22" ng-show="showElem2" ng-class="selectClass">Element 2</div>
+        <div id="d33" ng-show="showElem3" ng-class="selectClass">Element 3</div>
+        <br/>
+        <div id="d111" ng-if="remElem1" ng-class="selectClass">Element 1</div>
+        <div id="d222" ng-if="remElem2" ng-class="selectClass">Element 2</div>
+        <div id="d333" ng-if="remElem3" ng-class="selectClass">Element 3</div>
+        <br/>
+
+        <div id="tst" ng-class="styleObj"></div>
+        <div id="tst2" ng-style="StyleObj1">Hello</div>
+        <button class="btn btn-default" ng-click="GetEvent($event)" ng-mouseenter="GetEvent($event)">Event</button> {{sms}}
+           
+    </div>
+</div>
+
